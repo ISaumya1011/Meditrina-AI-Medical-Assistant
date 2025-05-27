@@ -10,9 +10,8 @@ import pandas as pd
 import PIL
 from PIL import Image
 
-GOOGLE_API_KEY = 'AIzaSyA_MRzinC7fI9_OwTGJX04CFvcR7jr62tE'
-# genai.configure(api_key=os.getenv(GOOGLE_API_KEY))
-genai.configure(api_key="AIzaSyA_MRzinC7fI9_OwTGJX04CFvcR7jr62tE")
+GOOGLE_API_KEY = 'GOOGLE_API_KEY'
+genai.configure(api_key="GOOGLE_API_KEY")
 
 # Fn to load gemini pro model n get response
 model = genai.GenerativeModel('gemini-pro')
